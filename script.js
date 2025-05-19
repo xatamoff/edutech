@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
   try {
     const mapDiv = document.getElementById('map');
     if (!mapDiv) {
-      console.error('#map elementi topilmadi');
+      console.error('Элемент #map не найден');
       return;
     }
     map = L.map('map').setView([55.7558, 37.6173], 5);
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Центрирование карты
 function focusOnCenter(lat, lng) {
   if (!map) {
-    console.error('Xaritani chiqarishda xatolik yuz berdi');
+    console.error('Карта не инициализирована');
     return;
   }
   map.setView([lat, lng], 15);
@@ -346,7 +346,7 @@ document.addEventListener('DOMContentLoaded', () => {
         focusOnCenter(lat, lng);
       }
     });
-    console.log('#assistantModal uchun qo'shildi');
+    console.log('Обработчик для #assistantModal добавлен');
   } else {
     console.error('Элемент #assistantModal не найден');
   }
