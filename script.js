@@ -346,7 +346,7 @@ document.addEventListener('DOMContentLoaded', () => {
         focusOnCenter(lat, lng);
       }
     });
-    console.log('#assistantModal uchun qo"shildi');
+    console.log('#assistantModal uchun qo'shildi');
   } else {
     console.error('Элемент #assistantModal не найден');
   }
