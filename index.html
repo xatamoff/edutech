@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.tailwindcss.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; connect-src 'self' https://unpkg.com https://tile.openstreetmap.org; img-src 'self' data: https://*.unpkg.com https://*.tile.openstreetmap.org;">
+  <title>Образовательные центры</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <header class="bg-blue-600 text-white py-4">
+    <div class="container mx-auto text-center">
+      <h1 class="text-3xl font-bold">Поиск образовательных центров</h1>
+    </div>
+  </header>
+  <main class="container mx-auto py-8">
+    <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+      <h2 class="text-2xl font-semibold mb-4">Найти центр</h2>
+      <div class="flex flex-col sm:flex-row gap-4 mb-4">
+        <input type="text" id="searchInput" placeholder="Введите название или город" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <button id="searchButton" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Поиск</button>
+        <button id="assistantButton" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Помочь выбрать центр</button>
+      </div>
+      <div id="results" class="grid grid-cols-1 sm:grid-cols-2 gap-4"></div>
+    </section>
+    <section class="bg-white p-6 rounded-lg shadow-md">
+      <h2 class="text-2xl font-semibold mb-4">Карта центров</h2>
+      <div id="map" style="height: 400px;"></div>
+    </section>
+  </main>
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>© 2025 Образовательные центры. Все права защищены.</p>
+    </div>
+  </footer>
+  <div id="assistantModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center">
+    <div class="bg-white p-6 rounded-lg max-w-lg w-full">
+      <h2 class="text-2xl font-semibold mb-4">Ассистент выбора центра</h2>
+      <div id="assistantContent"></div>
+      <div class="flex justify-end gap-4 mt-4">
+        <button id="assistantPrev" class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600 hidden">Назад</button>
+        <button id="assistantNext" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Далее</button>
+        <button id="assistantClose" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Закрыть</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
