@@ -1,10 +1,10 @@
 // Данные об образовательных центрах
 const centers = [
   { 
-    name: "Центр знаний", city: "Москва", address: "ул. Ленина, 10", lat: 55.7558, lng: 37.6173, 
-    description: "Современные курсы для взрослых.", category: "Программирование", 
-    phone: "+7 (495) 123-45-67", website: "https://center-znaniy.ru", 
-    hours: "Пн-Пт: 10:00-20:00", courses: "Python, Java, Web-дизайн", format: "Очно"
+    name: "Buxoro soliq texnikumi", city: "Buxoro", address: "Piridastgir ko'chasi, 20-uy", lat: 55.7558, lng: 39.749660, 64.435951,
+    description: "Iqtisodiyot, Moliya, Buxgalteriya, Axborot texnologiyalari", category: "Texnikum", 
+    phone: "+998 (55) 222-80-14", website: "https://buxst.uz", 
+    hours: "Du-Sh: 10:00-15:00", courses: "Soliq va soliqqa tortish, Bank ishi, Moliya, Buxgalteriya hisobi va audit, Kutubxonashunoslik va bibliografiya, Transport logistikasi", format: "Kunduzgi, Sirtqi"
   },
   { 
     name: "Учебный мир", city: "Санкт-Петербург", address: "Невский пр., 25", lat: 59.9343, lng: 30.3351, 
