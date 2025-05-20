@@ -271,7 +271,7 @@ function displayResults(results, containerId = 'results') {
   }
   resultsDiv.innerHTML = '';
   if (results.length === 0) {
-    resultsDiv.innerHTML = '<p class="text-gray-500">Ничего не найдено.</p>';
+    resultsDiv.innerHTML = '<p class="text-gray-500">Ma"lumot topilmadi</p>';
     console.log('Нет результатов для:', containerId);
     return;
   }
