@@ -97,9 +97,7 @@ const assistantQuestions = [
     key: 'category'
   },
   {
-    question: '
-      Ta'lim shakli
-      ',
+    question: 'Ta\'lim shakli',
     options: ['Kunduzgi', 'Sirtqi', 'barchasi'],
     key: 'format'
   }
