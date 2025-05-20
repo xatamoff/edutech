@@ -377,7 +377,10 @@ function filterCenters() {
     }
     if (assistantAnswers.category && assistantAnswers.category !== 'barchasi') {
       match = match && center.category === assistantAnswers.category;
-    }  
+    }
+    if (assistantAnswers.format && assistantAnswers.format !== 'barchasi') {
+  match = match && center.format.toLowerCase().includes(assistantAnswers.format.toLowerCase());
+}
     return match;
   });
   console.log('Отфильтровано центров:', filtered.length, 'на основе:', assistantAnswers);
