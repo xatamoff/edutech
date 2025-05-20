@@ -361,7 +361,7 @@ function showAssistantQuestion() {
     console.log(`Показан вопрос ${assistantStep + 1}: ${question}`);
   } else {
     const filteredCenters = filterCenters();
-    content.innerHTML = '<h3 class="text-lg font-semibold mb-4">Sizga tavsiya etiladigan talim muassasalari</h3><div id="assistantResults" class="max-h-96 overflow-y-auto"></div>';
+    content.innerHTML = '<h3 class="text-lg font-semibold mb-4">Sizga tavsiya etiladigan ta"lim muassasalari</h3><div id="assistantResults" class="max-h-96 overflow-y-auto"></div>';
     displayResults(filteredCenters, 'assistantResults');
     prevBtn.classList.remove('hidden');
     nextBtn.classList.add('hidden');
