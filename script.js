@@ -362,7 +362,7 @@ function showAssistantQuestion() {
     `;
     prevBtn.classList.toggle('hidden', assistantStep === 0);
     nextBtn.classList.remove('hidden');
-    nextBtn.textContent = assistantStep === assistantQuestions.length - 1 ? 'Показать рекомендации' : 'Далее';
+    nextBtn.textContent = assistantStep === assistantQuestions.length - 1 ? 'Tanlov natijalari' : 'Keyingi';
     console.log(`Показан вопрос ${assistantStep + 1}: ${question}`);
   } else {
     const filteredCenters = filterCenters();
