@@ -112,7 +112,7 @@ const centers = [
     name: "Kogon tuman politexnikumi", city: "Kogon", address: "ул. Садовая, 30", lat: 47.2357, lng: 39.7015, 
     description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
     phone: "+7 (863) 222-11-99", website: "1", 
-    hours: "Пн-Вс: 9:00-16:00", courses: "Elektrik, Tikuvchi, Avtomobillarni taʼmirlash va ularga xizmat koʻrsatish Payvandlovchi, Traktorchi-mashinist, Axborot vositalari mashinalari va kompyuter tarmoqlari", format: "Kunduzgi, Sirtqi"
+    hours: "Пн-Вс: 9:00-16:00", courses: "Elektrik, Tikuvchi, Avtomobillarni taʼmirlash va ularga xizmat koʻrsatish, Payvandlovchi, Traktorchi-mashinist, Axborot vositalari mashinalari va kompyuter tarmoqlari", format: "Kunduzgi, Sirtqi"
   }, 
 { 
     name: "Kogon shahar politexnikumi", city: "Kogon", address: "ул. Садовая, 30", lat: 47.2357, lng: 39.7015, 
