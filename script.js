@@ -372,17 +372,23 @@ function showAssistantQuestion() {
 function filterCenters() {
   const filtered = centers.filter(center => {
     let match = true;
+
     if (assistantAnswers.city && assistantAnswers.city !== 'barchasi') {
       match = match && center.city === assistantAnswers.city;
     }
+
     if (assistantAnswers.category && assistantAnswers.category !== 'barchasi') {
       match = match && center.category === assistantAnswers.category;
     }
+
     if (assistantAnswers.format && assistantAnswers.format !== 'barchasi') {
-  match = match && center.format.toLowerCase().includes(assistantAnswers.format.toLowerCase());
-}
+      const centerFormats = center.format.split(',').map(f => f.trim().toLowerCase());
+      match = match && centerFormats.includes(assistantAnswers.format.toLowerCase());
+    }
+
     return match;
   });
+
   console.log('Отфильтровано центров:', filtered.length, 'на основе:', assistantAnswers);
   return filtered;
 }
