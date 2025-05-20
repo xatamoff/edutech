@@ -306,24 +306,19 @@ function sanitize(str) {
 // Логика ассистента
 const assistantQuestions = [
   {
-    question: "В каком городе вы хотите учиться?",
-    options: [...new Set(centers.map(c => c.city)), "Любой"],
+    question: "Qaysi shaharda ta'lim olmoqchisiz?",
+    options: [...new Set(centers.map(c => c.city)), "barchasi"],
     key: "city"
   },
   {
-    question: "Какую категорию курсов предпочитаете?",
-    options: [...new Set(centers.map(c => c.category)), "Любая"],
+    question: "Mutaxassislik",
+    options: [...new Set(centers.map(c => c.category)), "barchasi"],
     key: "category"
   },
   {
-    question: "Какой формат обучения вам подходит?",
-    options: ["Очно", "Онлайн", "Любой"],
+    question: "Ta'lim shakli",
+    options: ["Kunduzgi", "Sirtqi", "barchasi"],
     key: "format"
-  },
-  {
-    question: "Есть ли предпочтения по времени работы центра?",
-    options: ["Утро (до 12:00)", "День (12:00-18:00)", "Вечер (после 18:00)", "Любое"],
-    key: "hours"
   }
 ];
 
