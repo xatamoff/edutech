@@ -377,18 +377,7 @@ function filterCenters() {
     }
     if (assistantAnswers.category && assistantAnswers.category !== 'barchasi') {
       match = match && center.category === assistantAnswers.category;
-    }
-    if (assistantAnswers.format && assistantAnswers.format !== 'barchasi') {
-      match = match && center.format === assistantAnswers.format;
-    }
-    if (assistantAnswers.hours && assistantAnswers.hours !== 'barchasi') {
-      const hoursMatch = {
-        'Утро (до 12:00)': /08:00|09:00|10:00/,
-        'День (12:00-18:00)': /12:00|13:00|14:00|15:00|16:00|17:00/,
-        'Вечер (после 18:00)': /18:00|19:00|20:00/
-      };
-      match = match && center.hours && hoursMatch[assistantAnswers.hours].test(center.hours);
-    }
+    }  
     return match;
   });
   console.log('Отфильтровано центров:', filtered.length, 'на основе:', assistantAnswers);
