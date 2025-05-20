@@ -3,8 +3,37 @@
 // Глобальные переменные
 let map;
 
-// Данные об образовательных центрах (предположительно импортируются отдельно)
-// Предполагается, что координаты и ссылки приведены к корректному виду
+// Данные об образовательных центрах
+const centers = [
+  {
+    name: "Buxoro texnikumi",
+    city: "Buxoro",
+    address: "Ko‘cha 1",
+    lat: 39.7740,
+    lng: 64.4270,
+    description: "Kasbiy ta'lim",
+    category: "Texnika",
+    phone: "+998 90 123 45 67",
+    website: "https://example.com",
+    hours: "Du-Sh: 9:00–17:00",
+    courses: "Kompyuter grafikasi, Elektrik",
+    format: "Kunduzgi, Sirtqi"
+  },
+  {
+    name: "Kogon kasb-hunar markazi",
+    city: "Kogon",
+    address: "Ko‘cha 2",
+    lat: 39.7150,
+    lng: 64.5510,
+    description: "Kasbiy ta'lim",
+    category: "Xizmat ko'rsatish",
+    phone: "+998 91 987 65 43",
+    website: "https://kogon-edu.uz",
+    hours: "Du-Ju: 8:00–16:00",
+    courses: "Tikuvchilik, Oshpazlik",
+    format: "Kunduzgi"
+  }
+];
 
 // Инициализация карты
 function initMap() {
