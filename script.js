@@ -23,8 +23,7 @@ const centers = [
     name: "Бухоро Абу Али ибн Сино номидаги Жамоат саломатлиги техникуми", city: "Бухоро", address: "ул. Горская, 15", lat: 39.7638, lng: 64.4114,
     description: "Kasbiy ta'lim", category: "Tibbiyot", 
     phone: "+9 (865) 221-02-60", website: "https://t.me/bux_tib_tex", 
-    hours: "Du-Sh: 10:00-16:00", courses: "Pardozlovchi, Avtomobillarni taʼmirlash va ularga xizmat koʻrsatish 
-Kompyuter grafikasi va dizayn operatori, Zargarlik buyumlari bo‘yicha usta, Payvandlovchi, Elektromontyor", format: "Kunduzgi, Sirtqi"
+    hours: "Du-Sh: 10:00-16:00", courses: "Pardozlovchi, Avtomobillarni taʼmirlash va ularga xizmat koʻrsatish, Kompyuter grafikasi va dizayn operatori, Zargarlik buyumlari bo‘yicha usta, Payvandlovchi, Elektromontyor", format: "Kunduzgi, Sirtqi"
   },
   { 
     name: "Buxoro transport va qurilish texnologiyalari texnikumi", city: "Buxoro", address: "ул. Баумана, 20", lat: 55.7887, lng: 49.1221, 
