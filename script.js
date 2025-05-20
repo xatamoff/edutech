@@ -366,7 +366,7 @@ function showAssistantQuestion() {
     console.log(`Показан вопрос ${assistantStep + 1}: ${question}`);
   } else {
     const filteredCenters = filterCenters();
-    content.innerHTML = '<h3 class="text-lg font-semibold mb-4">Рекомендованные центры</h3><div id="assistantResults" class="max-h-96 overflow-y-auto"></div>';
+    content.innerHTML = '<h3 class="text-lg font-semibold mb-4">Sizga tavsiya etiladigan ta'lim muassasalari</h3><div id="assistantResults" class="max-h-96 overflow-y-auto"></div>';
     displayResults(filteredCenters, 'assistantResults');
     prevBtn.classList.remove('hidden');
     nextBtn.classList.add('hidden');
@@ -377,16 +377,16 @@ function showAssistantQuestion() {
 function filterCenters() {
   const filtered = centers.filter(center => {
     let match = true;
-    if (assistantAnswers.city && assistantAnswers.city !== 'Любой') {
+    if (assistantAnswers.city && assistantAnswers.city !== 'barchasi') {
       match = match && center.city === assistantAnswers.city;
     }
-    if (assistantAnswers.category && assistantAnswers.category !== 'Любая') {
+    if (assistantAnswers.category && assistantAnswers.category !== 'barchasi') {
       match = match && center.category === assistantAnswers.category;
     }
-    if (assistantAnswers.format && assistantAnswers.format !== 'Любой') {
+    if (assistantAnswers.format && assistantAnswers.format !== 'barchasi') {
       match = match && center.format === assistantAnswers.format;
     }
-    if (assistantAnswers.hours && assistantAnswers.hours !== 'Любое') {
+    if (assistantAnswers.hours && assistantAnswers.hours !== 'barchasi') {
       const hoursMatch = {
         'Утро (до 12:00)': /08:00|09:00|10:00/,
         'День (12:00-18:00)': /12:00|13:00|14:00|15:00|16:00|17:00/,
@@ -476,7 +476,7 @@ document.addEventListener('DOMContentLoaded', () => {
         assistantAnswers[assistantQuestions[assistantStep].key] = select.value;
         assistantStep++;
         showAssistantQuestion();
-        console.log('Ассистент: Далее, шаг:', assistantStep, 'ответы:', assistantAnswers);
+        console.log('Ассистент: Keyingi, шаг:', assistantStep, 'ответы:', assistantAnswers);
       }
     });
     console.log('Обработчик для #assistantNext добавлен');
