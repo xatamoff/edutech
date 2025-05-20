@@ -1,48 +1,50 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uz">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.tailwindcss.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; connect-src 'self' https://unpkg.com https://tile.openstreetmap.org; img-src 'self' data: https://*.unpkg.com https://*.tile.openstreetmap.org;">
-  <title>Kasbiy ta'lim muassasalari</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.tailwindcss.com https://unpkg.com https://api.openrouteservice.org; style-src 'self' 'unsafe-inline' https://unpkg.com; connect-src 'self' https://unpkg.com https://tile.openstreetmap.org https://api.openrouteservice.org; img-src 'self' data: https://*.unpkg.com https://*.tile.openstreetmap.org;">
+  <title>Ta'lim muassasalari</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+  <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
 </head>
 <body class="bg-gray-100 font-sans">
   <header class="bg-blue-600 text-white py-4">
     <div class="container mx-auto text-center">
-      <h1 class="text-3xl font-bold">Maktab bitiruvchilarini kasbiy ta'limga yo'naltirish</h1>
+      <h1 class="text-3xl font-bold">Ta'lim muassasalari qidiruvi</h1>
     </div>
   </header>
   <main class="container mx-auto py-8">
     <section class="bg-white p-6 rounded-lg shadow-md mb-6">
-      <h3 class="text-2xl font-semibold mb-4">Qaysi soha yoki kasbga o'qimoqchisiz?</h3>
+      <h2 class="text-2xl font-semibold mb-4">Muassasa qidirish</h2>
       <div class="flex flex-col sm:flex-row gap-4 mb-4">
-        <input type="text" id="searchInput" placeholder="qidirish jumlasini kiriting" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <input type="text" id="searchInput" placeholder="Nomi yoki shahar bo'yicha qidiring" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
         <button id="searchButton" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Qidirish</button>
-        <button id="assistantButton" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Tanlashga yordam berish</button>
+        <button id="assistantButton" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Muassasa tanlashda yordam</button>
       </div>
       <div id="results" class="grid grid-cols-1 sm:grid-cols-2 gap-4"></div>
     </section>
     <section class="bg-white p-6 rounded-lg shadow-md">
-      <h2 class="text-2xl font-semibold mb-4">Xaritada ko'rish</h2>
+      <h2 class="text-2xl font-semibold mb-4">Muassasalar xaritasi</h2>
       <div id="map" style="height: 400px;"></div>
     </section>
   </main>
   <footer class="bg-gray-800 text-white py-4">
     <div class="container mx-auto text-center">
-      <p>© 2025 BUXORO SOLIQ TEXNIKUMI.</p>
+      <p>© 2025 Ta'lim muassasalari. Barcha huquqlar himoyalangan.</p>
     </div>
   </footer>
   <div id="assistantModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center">
     <div class="bg-white p-6 rounded-lg max-w-lg w-full">
-      <h2 class="text-2xl font-semibold mb-4">KERAKLI BANDLARNI TANLANG</h2>
+      <h2 class="text-2xl font-semibold mb-4">Muassasa tanlash yordamchisi</h2>
       <div id="assistantContent"></div>
       <div class="flex justify-end gap-4 mt-4">
-        <button id="assistantPrev" class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600 hidden">orqaga</button>
-        <button id="assistantNext" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">oldinga</button>
+        <button id="assistantPrev" class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600 hidden">Orqaga</button>
+        <button id="assistantNext" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Keyingi</button>
         <button id="assistantClose" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Yopish</button>
       </div>
     </div>
