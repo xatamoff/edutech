@@ -13,8 +13,7 @@ const centers = [
     hours: "Du-Sh: 10:00-16:00", courses: "Avtomobillarni taʼmirlash va ularga xizmat koʻrsatish, Intensiv bogʻlar operatori , Qutqaruvchi", format: "Kunduzgi, Sirtqi"
   },
   { 
-    name: "Бухоро туризм ва маданий мерос техникуми", city: "Бухоро", address: "Buxoro shahar, Sanoatchilar ko‘chasi,
-26 uy", lat: 39.755866, lng: 64.440930,
+    name: "Бухоро туризм ва маданий мерос техникуми", city: "Бухоро", address: "Buxoro shahar, Sanoatchilar ko‘chasi, 26 uy", lat: 39.755866, lng: 64.440930,
     description: "Kasbiy ta'lim", category: "Madaniyat", 
     phone: "+9 (865) 222-75-50", website: "https://www.buxtt.uz/", 
     hours: "Du-Sh: 10:00-16:00", courses: "Mehmonxona xoʻjaligi mutaxassisi, Oshpaz, Sartarosh (modelyer), Novvoy, Kompyuter tizimlarida dasturlash, Mehmonxona xoʻjaligini tashkil qilish va boshqarish, Kompyuter grafikasi va dizayn operatori", format: "Kunduzgi, Sirtqi"
@@ -63,141 +62,139 @@ const centers = [
   }, 
 { 
     name: "Vobkent tuman 1-son politexnikumi", city: "Vobkent", address: "ул. Садовая, 30", lat: 47.2357, lng: 39.7015, 
-      description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
+    description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
     phone: "+7 (863) 222-11-99", website: "", 
     hours: "Пн-Вс: 9:00-16:00", courses: "Avtomobillarni taʼmirlash va ularga xizmat koʻrsatish, Tikuvchi, Apparat va dasturiy taʼminot sozlovchisi, Payvandlovchi, Oqava suv va suv taʼminoti tizimlaridan foydalanish va montaj qilish ustasi", format: "Kunduzgi, Sirtqi"
   }, 
 { 
     name: "Vobkent tuman 2-son politexnikumi", city: "Vobkent", address: "ул. Садовая, 30", lat: 47.2357, lng: 39.7015, 
-      description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
+    description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
     phone: "+7 (863) 222-11-99", website: "", 
     hours: "Пн-Вс: 9:00-16:00", courses: "Apparat va dasturiy taʼminot sozlovchisi, Tikuvchi, Avtomobillarni taʼmirlash va ularga xizmat koʻrsatish, Asalarichi, Tikuvchilikda andoza tayyorlash", format: "Kunduzgi, Sirtqi"
   }, 
 { 
     name: "Gʻijduvon agrotexnologiyalar texnikumi", city: "Gʻijduvon", address: "ул. Садовая, 30", lat: 47.2357, lng: 39.7015, 
-      description: "Kasbiy ta'lim", category: "Agrotexnologiya", 
+    description: "Kasbiy ta'lim", category: "Agrotexnologiya", 
     phone: "+7 (863) 222-11-99", website: "", 
     hours: "Пн-Вс: 9:00-16:00", courses: "Avtomobillarni taʼmirlash va ularga xizmat koʻrsatish, Chorvador, Traktorchi-mashinist, Kompyuter tizimlarida dasturlash, Elektrik, Tikuvchilik mahsulotlari dizayneri, Suv xoʻjaligi avtomatlashtirilgan boshqarish tizimi operatori", format: "Kunduzgi, Sirtqi"
   }, 
 { 
     name: "Gʻijduvon tuman 1-son politexnikumi", city: "Gʻijduvon", address: "ул. Садовая, 30", lat: 47.2357, lng: 39.7015, 
-      description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
+    description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
     phone: "+7 (863) 222-11-99", website: "", 
     hours: "Пн-Вс: 9:00-16:00", courses: "Avtomobillarni taʼmirlash va ularga xizmat koʻrsatish, Apparat va dasturiy taʼminot sozlovchisi, Turar-joy kommunal xoʻjaligi ustasi, Suv xoʻjaligi avtomatlashtirilgan boshqarish tizimi operatori, Tikuvchi, Sotuvchi, nazoratchi-kassir", format: "Kunduzgi, Sirtqi"
   }, 
 { 
     name: "Gʻijduvon tuman 2-son politexnikumi", city: "Gʻijduvon", address: "ул. Садовая, 30", lat: 47.2357, lng: 39.7015, 
-      description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
+    description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
     phone: "+7 (863) 222-11-99", website: "", 
     hours: "Пн-Вс: 9:00-16:00", courses: "Elektrik, Apparat va dasturiy taʼminot sozlovchisi, Avtomobillarni taʼmirlash va ularga xizmat koʻrsatish, Sotuvchi, nazoratchi-kassir, Tikuvchi, Chilangar, Toʻqish-tikish jihozlari operatori, Quyosh panellarini oʻrnatish va ularga texnik xizmat koʻrsatish, Oshpaz", format: "Kunduzgi, Sirtqi"
   }, 
 { 
     name: "Gʻijduvon tuman 3-son politexnikumi", city: "Gʻijduvon", address: "ул. Садовая, 30", lat: 47.2357, lng: 39.7015, 
-      description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
+    description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
     phone: "+7 (863) 222-11-99", website: "", 
     hours: "Пн-Вс: 9:00-16:00", courses: "Avtomobillarni taʼmirlash va ularga xizmat koʻrsatish, Axborot vositalari mashinalari va kompyuter tarmoqlari, Elektrik, Payvandlovchi, Tikuvchi", format: "Kunduzgi, Sirtqi"
   }, 
 { 
     name: "Jondor tuman politexnikumi", city: "Jondor", address: "ул. Садовая, 30", lat: 47.2357, lng: 39.7015, 
-      description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
+    description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
     phone: "+7 (863) 222-11-99", website: "", 
     hours: "Пн-Вс: 9:00-16:00", courses: "Apparat va dasturiy taʼminot sozlovchisi, Elektrik, Payvandlovchi, Avtomobillarni taʼmirlash va ularga xizmat koʻrsatish, Tikuvchi, Turar-joy kommunal xoʻjaligi ustasi, Gaz va suv isteʼmol nazoratchi operatori", format: "Kunduzgi, Sirtqi"
   }, 
 { 
     name: "Jondor agrotexnologiyalar texnikumi", city: "Jondor", address: "ул. Садовая, 30", lat: 47.2357, lng: 39.7015, 
-      description: "Kasbiy ta'lim", category: "Agrotexnologiya", 
+    description: "Kasbiy ta'lim", category: "Agrotexnologiya", 
     phone: "+7 (863) 222-11-99", website: "", 
     hours: "Пн-Вс: 9:00-16:00", courses: "Raqamli axborotlarni qayta ishlash ustasi, Elektrik, Avtomobillarni taʼmirlash va ularga xizmat koʻrsatish, Elektromobillarga texnik xizmat ko‘rsatish va ta’mirlash, Tikuvchi, Traktorchi-mashinist, Asalarichi, Sotuvchi, nazoratchi-kassir", format: "Kunduzgi, Sirtqi"
   }, 
 { 
     name: "Kogon tuman politexnikumi", city: "Kogon", address: "ул. Садовая, 30", lat: 47.2357, lng: 39.7015, 
-      description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
+    description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
     phone: "+7 (863) 222-11-99", website: "", 
     hours: "Пн-Вс: 9:00-16:00", courses: "Elektrik, Tikuvchi, Avtomobillarni taʼmirlash va ularga xizmat koʻrsatish Payvandlovchi, Traktorchi-mashinist, Axborot vositalari mashinalari va kompyuter tarmoqlari", format: "Kunduzgi, Sirtqi"
   }, 
 { 
     name: "Kogon shahar politexnikumi", city: "Kogon", address: "ул. Садовая, 30", lat: 47.2357, lng: 39.7015, 
-      description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
+    description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
     phone: "+7 (863) 222-11-99", website: "", 
     hours: "Пн-Вс: 9:00-16:00", courses: "Axborot vositalari mashinalari va kompyuter tarmoqlari, Avtomobillarni taʼmirlash va ularga xizmat koʻrsatish, Qutqaruvchi, Payvandlovchi, Tikuvchi, Elektr jihozlariga xizmat koʻrsatish va taʼmirlash, Metallga ishlov berish", format: "Kunduzgi, Sirtqi"
   }, 
 { 
     name: "Qorakoʻl pedagogika texnikumi", city: "Qorakoʻl", address: "ул. Садовая, 30", lat: 47.2357, lng: 39.7015, 
-      description: "Kasbiy ta'lim", category: "Pedagogika", 
+    description: "Kasbiy ta'lim", category: "Pedagogika", 
     phone: "+7 (863) 222-11-99", website: "", 
     hours: "Пн-Вс: 9:00-16:00", courses: "Tikuvchi, Kompyuter grafikasi va dizayn operatori", format: "Kunduzgi, Sirtqi"
   }, 
 { 
     name: "Qorakoʻl tuman 1-son politexnikumi", city: "Qorakoʻl", address: "ул. Садовая, 30", lat: 47.2357, lng: 39.7015, 
-      description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
+    description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
     phone: "+7 (863) 222-11-99", website: "", 
     hours: "Пн-Вс: 9:00-16:00", courses: "Avtomobillarni taʼmirlash va ularga xizmat koʻrsatish, Apparat va dasturiy taʼminot sozlovchisi, Traktorchi-mashinist, Qurilish ishlari ishchisi, Payvandlovchi, Sanitariya va konditsioner qurilmalari montaji, Tikuvchi", format: "Kunduzgi, Sirtqi"
   }, 
 { 
     name: "Qorakoʻl tuman 2-son politexnikumi", city: "Qorakoʻl", address: "ул. Садовая, 30", lat: 47.2357, lng: 39.7015, 
-      description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
+    description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
     phone: "+7 (863) 222-11-99", website: "", 
     hours: "Пн-Вс: 9:00-16:00", courses: "Avtomobillarni taʼmirlash va ularga xizmat koʻrsatish, Apparat va dasturiy taʼminot sozlovchisi, Traktorchi-mashinist, Qurilish ishlari ishchisi, Payvandlovchi, Yoqilgʻi quyish shoxobchasi operatori, Tikuvchi ", format: "Kunduzgi, Sirtqi"
   }, 
 { 
     name: "Qorovulbozor tuman politexnikumi", city: "Qorovulbozor", address: "ул. Садовая, 30", lat: 47.2357, lng: 39.7015, 
-      description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
+    description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
     phone: "+7 (863) 222-11-99", website: "", 
-    hours: "Пн-Вс: 9:00-16:00", courses: "Avtomobillarni taʼmirlash va ularga xizmat koʻrsatish, Axborot vositalari mashinalari va kompyuter tarmoqlari, 
-Kompressor qurilmalari mashinisti, Elektromontyor, Quyosh panellarini oʻrnatish va ularga texnik xizmat koʻrsatish, Payvandlovchi, Tikuvchi, Oshpaz 
-", format: "Kunduzgi, Sirtqi"
+    hours: "Пн-Вс: 9:00-16:00", courses: "Avtomobillarni taʼmirlash va ularga xizmat koʻrsatish, Axborot vositalari mashinalari va kompyuter tarmoqlari, Kompressor qurilmalari mashinisti, Elektromontyor, Quyosh panellarini oʻrnatish va ularga texnik xizmat koʻrsatish, Payvandlovchi, Tikuvchi, Oshpaz", format: "Kunduzgi, Sirtqi"
   }, 
 { 
     name: "Olot tuman politexnikumi", city: "Olot", address: "ул. Садовая, 30", lat: 47.2357, lng: 39.7015, 
-      description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
+    description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
     phone: "+7 (863) 222-11-99", website: "", 
     hours: "Пн-Вс: 9:00-16:00", courses: "Avtomobillarni taʼmirlash va ularga xizmat koʻrsatish, Apparat va dasturiy taʼminot sozlovchisi, Traktorchi-mashinist, Elektromontyor, Melioratsiya texnikasi operatori, Chorvador, Quyosh panellarini oʻrnatish va ularga texnik xizmat koʻrsatish, Tikuvchi ", format: "Kunduzgi, Sirtqi"
   }, 
 { 
     name: "Peshku tuman 1-son politexnikumi", city: "Peshku", address: "ул. Садовая, 30", lat: 47.2357, lng: 39.7015, 
-      description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
+    description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
     phone: "+7 (863) 222-11-99", website: "", 
     hours: "Пн-Вс: 9:00-16:00", courses: "Raqamli axborotlarni qayta ishlash ustasi, Elektromontyor, Quyosh panellarini oʻrnatish va ularga texnik xizmat koʻrsatish, Avtomobillarni taʼmirlash va ularga xizmat koʻrsatish, Payvandlovchi, Traktorchi-mashinist, Suv xoʻjaligi avtomatlashtirilgan boshqarish tizimi operatori, Maishiy texnika jihozlariga xizmat koʻrsatish va taʼmirlash, Sartarosh (modelyer), Mebel ishlab chiqarish, Tikuvchi ", format: "Kunduzgi, Sirtqi"
   }, 
 { 
     name: "Peshku tuman 2-son politexnikumi", city: "Peshku", address: "ул. Садовая, 30", lat: 47.2357, lng: 39.7015, 
-      description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
+    description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
     phone: "+7 (863) 222-11-99", website: "", 
     hours: "Пн-Вс: 9:00-16:00", courses: "Avtomobillarni taʼmirlash va ularga xizmat koʻrsatish, Tikuvchi, Yigiruv ishlab chiqarish, Qurilish ishlari ishchisi, Traktorchi-mashinist", format: "Kunduzgi, Sirtqi"
   }, 
 { 
     name: "Romitan tuman 1-son politexnikumi", city: "Romitan", address: "ул. Садовая, 30", lat: 47.2357, lng: 39.7015, 
-      description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
+    description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
     phone: "+7 (863) 222-11-99", website: "", 
     hours: "Пн-Вс: 9:00-16:00", courses: "Avtomobillarni taʼmirlash va ularga xizmat koʻrsatish, Kompyuter grafikasi va dizayn operatori, Sartarosh (modelyer), Tikuvchi ", format: "Kunduzgi, Sirtqi"
   }, 
 { 
     name: "Romitan tuman 2-son politexnikumi", city: "Romitan", address: "ул. Садовая, 30", lat: 47.2357, lng: 39.7015, 
-      description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
+    description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
     phone: "+7 (863) 222-11-99", website: "", 
     hours: "Пн-Вс: 9:00-16:00", courses: "Avtomobillarni taʼmirlash va ularga xizmat koʻrsatish, Tikuvchi, Oshpaz, Axborot vositalari mashinalari va kompyuter tarmoqlari ", format: "Kunduzgi, Sirtqi"
   }, 
 { 
     name: "Romitan tuman 3-son politexnikumi", city: "Romitan", address: "ул. Садовая, 30", lat: 47.2357, lng: 39.7015, 
-      description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
+    description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
     phone: "+7 (863) 222-11-99", website: "", 
     hours: "Пн-Вс: 9:00-16:00", courses: "Kompyuter grafikasi va dizayn operatori, Avtomobillarni taʼmirlash va ularga xizmat koʻrsatish, Asalarichi, Oʻsimliklar himoyasi laboranti, Elektr stansiyalari uskunalarini taʼmirlash, Chorvador, Traktorchi-mashinist, Tikuvchi ", format: "Kunduzgi, Sirtqi"
   }, 
 { 
     name: "Shofirkon raqamli texnologiyalar texnikumi", city: "Shofirkon", address: "ул. Садовая, 30", lat: 47.2357, lng: 39.7015, 
-      description: "Kasbiy ta'lim", category: "", 
+    description: "Kasbiy ta'lim", category: "", 
     phone: "+7 (863) 222-11-99", website: "", 
     hours: "Пн-Вс: 9:00-16:00", courses: "Axborot vositalari mashinalari va kompyuter tarmoqlari, Avtomobillarni taʼmirlash va ularga xizmat koʻrsatish, Payvandlovchi, Elektromontyor, Tikuvchi", format: "Kunduzgi, Sirtqi"
   }, 
 { 
     name: "Shofirkon agrotexnologiyalar texnikumi", city: "Shofirkon", address: "ул. Садовая, 30", lat: 47.2357, lng: 39.7015, 
-      description: "Kasbiy ta'lim", category: "Agrotexnologiyalar", 
+    description: "Kasbiy ta'lim", category: "Agrotexnologiyalar", 
     phone: "+7 (863) 222-11-99", website: "", 
     hours: "Пн-Вс: 9:00-16:00", courses: "Elektromontyor, Avtomobillarni taʼmirlash va ularga xizmat koʻrsatish, Payvandlovchi, Tikuvchi, Kompyuter grafikasi va dizayn operatori, Qurilish ishlari ishchisi, Traktorchi-mashinist, Asalarichi, Oshpaz", format: "Kunduzgi, Sirtqi"
   }, 
 { 
     name: "Shofirkon tuman politexnikumi", city: "Shofirkon", address: "ул. Садовая, 30", lat: 47.2357, lng: 39.7015, 
-      description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
+    description: "Kasbiy ta'lim", category: "Servis va xizmat ko'rsatish", 
     phone: "+7 (863) 222-11-99", website: "", 
     hours: "Пн-Вс: 9:00-16:00", courses: "Apparat va dasturiy taʼminot sozlovchisi, Avtomobillarni taʼmirlash va ularga xizmat koʻrsatish, Payvandlovchi, Tikuvchi, Traktorchi-mashinist, Elektrik, Asalarichi, Oshpaz", format: "Kunduzgi, Sirtqi"
   } 
