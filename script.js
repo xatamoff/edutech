@@ -271,7 +271,7 @@ function displayResults(results, containerId = 'results') {
   }
   resultsDiv.innerHTML = '';
   if (results.length === 0) {
-    resultsDiv.innerHTML = '<p class="text-gray-500">Ma"lumot topilmadi</p>';
+    resultsDiv.innerHTML = '<p class="text-gray-500">Ma\'lumot topilmadi</p>';
     console.log('Нет результатов для:', containerId);
     return;
   }
@@ -280,15 +280,15 @@ function displayResults(results, containerId = 'results') {
     div.className = 'p-4 bg-gray-50 rounded-lg';
     div.innerHTML = `
       <h3 class="text-lg font-semibold">${sanitize(center.name)}</h3>
-      <p class="text-gray-600">Город: ${sanitize(center.city)}</p>
-      <p class="text-gray-600">Адрес: ${sanitize(center.address)}</p>
-      <p class="text-gray-600">Координаты: <a href="#" class="text-blue-500 hover:underline coord-link" data-lat="${center.lat}" data-lng="${center.lng}">${sanitize(center.lat.toString())}, ${sanitize(center.lng.toString())}</a></p>
-      <p class="text-gray-600">Категория: ${sanitize(center.category || 'Нет данных')}</p>
-      <p class="text-gray-600">Телефон: ${sanitize(center.phone || 'Нет данных')}</p>
-      ${center.website ? `<p class="text-gray-600">Сайт: <a href="${sanitize(center.website)}" target="_blank" class="text-blue-500 hover:underline">${sanitize(center.website)}</a></p>` : '<p class="text-gray-600">Сайт: Нет данных</p>'}
-      <p class="text-gray-600">Часы работы: ${sanitize(center.hours || 'Нет данных')}</p>
-      <p class="text-gray-600">Курсы: ${sanitize(center.courses || 'Нет данных')}</p>
-      <p class="text-gray-600">Формат: ${sanitize(center.format || 'Нет данных')}</p>
+      <p class="text-gray-600">Shahar: ${sanitize(center.city)}</p>
+      <p class="text-gray-600">Manzil: ${sanitize(center.address)}</p>
+      <p class="text-gray-600">Lokatsiya: <a href="#" class="text-blue-500 hover:underline coord-link" data-lat="${center.lat}" data-lng="${center.lng}">${sanitize(center.lat.toString())}, ${sanitize(center.lng.toString())}</a></p>
+      <p class="text-gray-600">Soha: ${sanitize(center.category || 'Нет данных')}</p>
+      <p class="text-gray-600">Telefon: ${sanitize(center.phone || 'Нет данных')}</p>
+      ${center.website ? `<p class="text-gray-600">Sayt: <a href="${sanitize(center.website)}" target="_blank" class="text-blue-500 hover:underline">${sanitize(center.website)}</a></p>` : '<p class="text-gray-600">Сайт: Нет данных</p>'}
+      <p class="text-gray-600">Ish vaqti: ${sanitize(center.hours || 'Нет данных')}</p>
+      <p class="text-gray-600">Mutaxassislik: ${sanitize(center.courses || 'Нет данных')}</p>
+      <p class="text-gray-600">Ta'lim shakli: ${sanitize(center.format || 'Нет данных')}</p>
       <p class="text-gray-600">${sanitize(center.description)}</p>
     `;
     resultsDiv.appendChild(div);
@@ -361,7 +361,7 @@ function showAssistantQuestion() {
     console.log(`Показан вопрос ${assistantStep + 1}: ${question}`);
   } else {
     const filteredCenters = filterCenters();
-    content.innerHTML = '<h3 class="text-lg font-semibold mb-4">Sizga tavsiya etiladigan ta"lim muassasalari</h3><div id="assistantResults" class="max-h-96 overflow-y-auto"></div>';
+    content.innerHTML = '<h3 class="text-lg font-semibold mb-4">Sizga tavsiya etiladigan ta\'lim muassasalari</h3><div id="assistantResults" class="max-h-96 overflow-y-auto"></div>';
     displayResults(filteredCenters, 'assistantResults');
     prevBtn.classList.remove('hidden');
     nextBtn.classList.add('hidden');
